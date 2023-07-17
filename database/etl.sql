@@ -19,4 +19,3 @@ UPDATE answers set date_written = to_timestamp(tmp_date/1000)::date;
 ALTER TABLE questions drop column tmp_date;
 ALTER TABLE answers drop column tmp_date;
 
-

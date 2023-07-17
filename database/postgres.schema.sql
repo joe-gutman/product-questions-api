@@ -6,11 +6,11 @@ DROP TABLE IF EXISTS photos CASCADE;
 CREATE TABLE IF NOT EXISTS "questions" (
     id SERIAL PRIMARY KEY,
     product_id INTEGER NOT NULL,
-    date_written TIMESTAMP,
+    date_written TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     asker_name VARCHAR(50) NOT NULL,
     asker_email VARCHAR(50) NOT NULL,
-    helpful INTEGER DEFAULT NULL,
-    reported BOOLEAN NOT NULL,
+    helpful INTEGER NOT NULL DEFAULT 0,
+    reported BOOLEAN NOT NULL DEFAULT false,
     body VARCHAR(1000) NOT NULL,
     tmp_date BIGINT NOT NULL
 );
@@ -19,11 +19,11 @@ CREATE TABLE IF NOT EXISTS "answers" (
     id SERIAL PRIMARY KEY,
     question_id INTEGER NOT NULL,
     body VARCHAR(2000) NOT NULL,
-    date_written TIMESTAMP,
+    date_written TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     answerer_name VARCHAR(50) NOT NULL,
     answerer_email VARCHAR(50) NOT NULL,
-    helpful INTEGER DEFAULT NULL,
-    reported BOOLEAN NOT NULL,
+    helpful INTEGER NOT NULL DEFAULT 0,
+    reported BOOLEAN NOT NULL DEFAULT false,
     tmp_date BIGINT NOT NULL,
     CONSTRAINT fk_question
         FOREIGN KEY(question_id)
