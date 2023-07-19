@@ -1,9 +1,10 @@
+require('dotenv').config();
 const bodyParser = require('body-parser');
 const express = require('express');
 const db = require('./queries.js');
 var cors = require('cors');
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -41,7 +42,6 @@ app.get('/qa/questions/:question_id/answers', (request, response) => {
 });
 
 app.post('/:product_id/qa/questions/', (request, response) => {
-  console.log('request: ', request.query);
   question_id = request.params.question_id;
   db.postQuestion(request)
     .then((results) => {
