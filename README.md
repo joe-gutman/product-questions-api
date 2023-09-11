@@ -19,23 +19,29 @@ The Product Questions API effectively processes and serves user-generated questi
 
 ## 🔗 Endpoints and Usage
 **1. Get Questions for a Product** 📋
-```GET /:product_id/qa/questions/```
-Fetches user questions associated with a specific product.
+```
+GET /:product_id/qa/questions/
+```
 
 **2. Get Answers for a Question** 💬
-```GET /qa/questions/:question_id/answers```
-Fetches user answers for a given question.
+```
+GET /qa/questions/:question_id/answers
+```
 
 **3. Post a Question for a Product** ❓
-```POST /:product_id/qa/questions/```
-Adds a new question for a specific product.
+```
+POST /:product_id/qa/questions/
+```
 
 **4. Post an Answer for a Question** ➡️
-```POST /qa/questions/:question_id/answers```
-Adds an answer for a particular question.
+```
+POST /qa/questions/:question_id/answers
+```
 
 **5. Mark a Question as Helpful** 👍
-```PUT /qa/questions/:question_id/helpful```
+```
+PUT /qa/questions/:question_id/helpful
+```
 
 ## 📜 Credits
-- Joe Gutman 🧑‍💻
+- [Joe Gutman](https://github.com/joe-gutman) 🧑‍💻
