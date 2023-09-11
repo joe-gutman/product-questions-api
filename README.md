@@ -43,5 +43,5 @@ POST /qa/questions/:question_id/answers
 PUT /qa/questions/:question_id/helpful
 ```
 
-## 📜 Credits
+## 📜 Developer
 - [Joe Gutman](https://github.com/joe-gutman) 🧑‍💻
