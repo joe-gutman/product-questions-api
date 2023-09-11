@@ -8,14 +8,6 @@ The Product Questions API effectively processes and serves user-generated questi
 - **Database**: PostgreSQL 🐘 - Chosen for its relational capabilities which guarantee organized and fast retrieval of user questions and their associated product details.
 - **Deployment**: Amazon EC2 with NGINX ☁️ - Ensures reliable load balancing and swift response times.
 - **Performance**: 🚀 Handles a throughput of 500 users/s with a consistent average response time of 10ms.
-
-## 🧰 Tools & Resources
-- **Database**: PostgreSQL 🐘
-- **Server**: Express.js 🛤️
-- **Deployment**: Amazon EC2 ☁️
-- **Load Balancer**: NGINX ⚖️
-- **Performance Testing**: Loader.io 📊
-
 ## 🧰 Tools & Resources
 
 ![Database](https://img.shields.io/badge/Database-PostgreSQL-blue?style=for-the-badge&logo=postgresql)<br>
